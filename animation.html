@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+._call {
+        -webkit-animation-name: wobble;
+        -moz-animation-name: wobble;
+        -o-animation-name: wobble;
+        animation-name: wobble;
+        -webkit-animation-duration: 3s;
+        -moz-animation-duration: 3s;
+        -o-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -o-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+    
+    @keyframes wobble {
+        0% {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+5% {
+    -webkit-transform: translate3d(-25%,0,0)rotate3d(0,0,1,-15deg);
+    -moz-transform: translate3d(-25%,0,0)rotate3d(0,0,1,-15deg);
+    transform: translate3d(-25%,0,0)rotate3d(0,0,1,-15deg);
+}
+
+10% {
+    -webkit-transform: translate3d(20%,0,0)rotate3d(0,0,1,25deg);
+    -moz-transform: translate3d(20%,0,0)rotate3d(0,0,1,25deg);
+    transform: translate3d(20%,0,0)rotate3d(0,0,1,25deg);
+}
+
+15% {
+    -webkit-transform: translate3d(-15%,0,0)rotate3d(0,0,1,-10deg);
+    -moz-transform: translate3d(-15%,0,0)rotate3d(0,0,1,-10deg);
+    transform: translate3d(-15%,0,0)rotate3d(0,0,1,-10deg);
+}
+
+20% {
+    -webkit-transform: translate3d(0,0,0)rotate3d(0,0,1,0deg);
+    -moz-transform: translate3d(0,0,0)rotate3d(0,0,1,0deg);
+    transform: translate3d(0,0,0)rotate3d(0,0,1,0deg);
+}
+
+80% {
+    -webkit-transform: translate3d(0,0,0)rotate3d(0,0,1,0deg);
+    -moz-transform: translate3d(0,0,0)rotate3d(0,0,1,0deg);
+    transform: translate3d(0,0,0)rotate3d(0,0,1,0deg);
+}
+
+85% {
+    -webkit-transform: translate3d(10%,0,0)rotate3d(0,0,1,5deg);
+    -moz-transform: translate3d(10%,0,0)rotate3d(0,0,1,5deg);
+    transform: translate3d(10%,0,0)rotate3d(0,0,1,5deg);
+}
+
+90% {
+    -webkit-transform: translate3d(-5%,0,0)rotate3d(0,0,1,-1deg);
+    -moz-transform: translate3d(-5%,0,0)rotate3d(0,0,1,-1deg);
+    transform: translate3d(-5%,0,0)rotate3d(0,0,1,-1deg);
+}
+
+100% {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+}
+   
+    </style>
+</head>
+<body>
+    <button style="background-color: green;color:#fff; font-size: 18px; border:1px solid green;padding: 8px 13px; border-radius: 5px; cursor: pointer;"><img class="_call" src="/src/assets/images/call.png" style="padding-right: 5px; vertical-align: middle;width: 25px">Call Me</button>
+</body>
+</html>
